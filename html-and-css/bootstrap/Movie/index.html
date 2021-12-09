@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <style>
+
+    .carousel-item img {
+        object-fit: cover;
+        object-position: center;
+        height: 50vh;
+        overflow: hidden;
+    }
+            </style>
+  
+</head>
+<body>
+
+        <!-- Start_navbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+
+            <a class="navbar-brand bg-success text-white" href="#">Movies</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Action</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Comedy</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Drama</a>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Fantasy</a>
+                  <li class="nav-item">
+                        <a class="nav-link" href="#">Horror</a>
+
+         
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- End_navbar -->
+
+        <!-- Start_slider -->
+
+
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="/html-and-css/bootstrap/Movie/img/avatar.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                  <h5 class="bg-dark text-light"> Avatar </h5>
+
+                  <p class="bg-success text-light">The story of an ex-Marine (Sam Worthington) sent to the moon Pandora in disguise. </p>
+                
+                </div>
+            
+              </div>
+
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/html-and-css/bootstrap/Movie/img/TheDarkKnight.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="bg-dark text-light">The Dark Knight </h5>
+                  <p class="bg-success text-light">Say what you will about Joaquin Phoenix's Joker, but in my heart, there's the one true supreme: Heath Ledger.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/html-and-css/bootstrap/Movie/img/TheDeparted.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="bg-dark text-light"> The Departed  </h5>
+                  <p class="bg-success text-light" > The newest mission for an undercover cop (Leonardo DiCaprio) is to infiltrate one of the biggest mafias in South Boston.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <i class="fas fa-chevron-circle-left h1 text-light"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <i class="fas fa-chevron-circle-right h1 text-light"></i>
+
+
+            </button>
+          </div>
+
+        <!-- End_slider -->
+
+        <hr>
+      <h1 class="bg-success text-center text-light"> Home </h1>
+
+
+        <!-- Start_cards -->
+
+
+        <hr>
+
+        <!-- Start_card1 -->
+
+
+
+        <div class="card-group">
+          <div class="card">
+            <img src="/html-and-css/bootstrap/Movie/img/avatar.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Avatar</h5>
+              <p class="card-text"> The story of an ex-Marine (Sam Worthington) sent to the moon Pandora in disguise as one of the aliens who live there to find out information about the species captivated audiences when it dropped.</p>
+            </div>
+             <!-- start_modal1 -->
+
+    <!-- Start_Button trigger modal1 -->
+    <div class="container my-2 bg-light">
+        <div class="col-md-12 text-center">
+<button type="button text-center" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+    Read More
+  </button>
+</div>
+</div>
+    <!-- End_Button trigger modal -->
+
+  <!-- Start_Modal1 -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel1">Avatar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <p>  Avatar (marketed as James Cameron's Avatar) is a 2009 American epic science fiction film directed, written, produced, and co-edited by James Cameron and starring Sam Worthington, Zoe Saldana, Stephen Lang, Michelle Rodriguez, and Sigourney Weaver. The film is set in the mid-22nd century when humans are colonizing Pandora, a lush habitable moon of a gas giant in the Alpha Centauri star system, in order to mine the valuable mineral unobtanium.[9][10][11] The expansion of the mining colony threatens the continued existence of a local tribe of Na'vi – a humanoid species indigenous to Pandora. The film's title refers to a genetically engineered Na'vi body operated from the brain of a remotely located human that is used to interact with the natives of Pandora.[12]
+
+                Development of Avatar began in 1994, when Cameron wrote an 80-page treatment for the film. Filming was supposed to take place after the completion of Cameron's 1997 film Titanic, for a planned release in 1999;[15] however, according to Cameron, the necessary technology was not yet available to achieve his vision of the film.[16] Work on the language of the Na'vi began in 2005, and Cameron began developing the screenplay and fictional universe in early 2006.[17][18] Avatar was officially budgeted at $237 million.[4] Other estimates put the cost between $280 million and $310 million for production and at $150 million for promotion.[19][20][21] The film made extensive use of new motion capture filming techniques, and was released for traditional viewing, 3D viewing (using the RealD 3D, Dolby 3D, XpanD 3D, and IMAX 3D formats), and for "4D" experiences in selected South Korean theaters.[22]
+                
+                Avatar premiered in London on December 10, 2009, and was released in the United States on December 18 to positive reviews, with critics highly praising its ground-breaking visual effects.[23][24][25] During its theatrical run, the film broke several box office records and became the highest-grossing film at the time, as well as in the United States and Canada,[26] surpassing Cameron's Titanic, which had held those records for twelve years.[27] Avatar remained the highest-grossing film worldwide for nearly a decade until it was overtaken by Avengers: Endgame in 2019, before a Chinese re-release saw Avatar retake the top spot in March 2021.[28] Adjusted for inflation, Avatar is the second highest-grossing movie of all time after Gone with the Wind with a total of more than $3 billion. It also became the first film to gross more than $2 billion[29] and the best-selling video title of 2010 in the United States. Avatar was nominated for nine Academy Awards, including Best Picture and Best Director,[30] and won three, for Best Art Direction, Best Cinematography, and Best Visual Effects.[31] The success of the film also led to electronics manufacturers releasing 3D televisions[32] and caused 3D films[33] to increase in popularity.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- End_modal 1  -->
+    
+            <div class="card-footer">
+                <small class="text-muted" >Last updated 3 mins ago</small>
+                
+            </div>
+          </div>
+
+        <!-- End_card1 -->
+
+
+        <!-- Start_card2 -->
+
+          
+          <div class="card">
+            <img src="/html-and-css/bootstrap/Movie/img/TheDarkKnight.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Dark Knight</h5>
+              <p class="card-text">Say what you will about Joaquin Phoenix's Joker, but in my heart, there's the one true supreme: Heath Ledger. In the second installment of Christian Bale's journey as Batman, he's put to the test when the Joker torments the city of Gotham with his psychological and physical tests.</p>
+            </div>
+
+            
+<!-- start_modal2 -->
+
+    <!-- Start_Button trigger modal2 -->
+    <div class="container my-2 bg-light">
+        <div class="col-md-12 text-center">
+<button type="button text-center" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+    Read More
+  </button>
+</div>
+</div>
+    <!-- End_Button trigger modal -->
+
+  <!-- Start_Modal2 -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">The Dark Knight   </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <p> The Dark Knight is a 2008 superhero film directed, produced, and co-written by Christopher Nolan. Based on the DC Comics character Batman, the film is the second installment of Nolan's The Dark Knight Trilogy and a sequel to 2005's Batman Begins, starring Christian Bale and supported by Michael Caine, Heath Ledger, Gary Oldman, Aaron Eckhart, Maggie Gyllenhaal, and Morgan Freeman. In the film, Bruce Wayne / Batman (Bale), Police Lieutenant James Gordon (Oldman) and District Attorney Harvey Dent (Eckhart) form an alliance to dismantle organized crime in Gotham City, but are menaced by an anarchistic mastermind known as the Joker (Ledger), who seeks to undermine Batman's influence and throw the city into anarchy.
+
+                Nolan's inspiration for the film was the Joker's comic book debut in 1940, the 1988 graphic novel The Killing Joke, and the 1996 series The Long Halloween, which retold Harvey Dent's origin. The "Dark Knight" nickname was first applied to Batman in Batman #1 (1940), in a story written by Bill Finger.[4][5] The Dark Knight was filmed primarily in Chicago, as well as in several other locations in the United States, the United Kingdom, and Hong Kong. The film was the first mainstream feature to partially utilize IMAX 70 mm cameras, with Nolan using them for 28 minutes of the film, including the Joker's first appearance. Warner Bros. initially created a viral marketing campaign for The Dark Knight, developing promotional websites and trailers highlighting screenshots of Ledger as the Joker. Ledger died on January 22, 2008, some months after he completed filming and six months before the film's release from a toxic combination of prescription drugs, leading to intense attention from the press and movie-going public.
+                
+                Considered one of the best films of its decade and one of the greatest and most influential superhero films of all time, the film received critical acclaim for its screenplay, visual effects, musical score, mature themes, performances (particularly Ledger's), cinematography, action sequences and direction. The film also set numerous records during its theatrical run.[6] The Dark Knight appeared on 287 critics' top-ten lists, more than any other film of 2008 with the exception of WALL-E, and more critics (77) named The Dark Knight the best film released that year.[7] With over $1 billion in revenue worldwide, it became the fourth-highest-grossing film at the time, and highest-grossing film of 2008; it also set the record for highest-grossing domestic opening with $158 million, a record it held for three years.[8] At the 81st Academy Awards, the film received eight nominations; it won the award for Best Sound Editing and Ledger was posthumously awarded Best Supporting Actor.[9] In 2020, the film was selected for preservation in the United States National Film Registry by the Library of Congress for being "culturally, historically, or aesthetically significant",[10] becoming the second superhero film after 1978's Superman to earn the honor. The Dark Knight Rises, the final film in the trilogy, was released in 2012.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- End_modal 2  -->
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+
+        <!-- End_card2 -->
+
+        <!-- Start_card3 -->
+
+
+          <div class="card">
+            <img src="/html-and-css/bootstrap/Movie/img/TheDeparted.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Departed</h5>
+              <p class="card-text"> The newest mission for an undercover cop (Leonardo DiCaprio) is to infiltrate one of the biggest mafias in South Boston. At the same time, a member of that very same mob starts to work undercover for the police department to report everything concerning said mob group to its head boss (Jack Nicholson). </p>
+            </div>
+                         <!-- start_modal3 -->
+
+    <!-- Start_Button trigger modal3 -->
+    <div class="container my-2 bg-light">
+        <div class="col-md-12 text-center">
+<button type="button text-center" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+    Read More
+  </button>
+</div>
+</div>
+    <!-- End_Button trigger modal 3 -->
+
+  <!-- Start_Modal3 -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel3">The Departed </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <p>  The Departed is a 2006 American crime drama film directed by Martin Scorsese and written by William Monahan.[2] It is a remake of the 2002 Hong Kong film Infernal Affairs and is also loosely based on the real-life Boston Winter Hill Gang; the character Colin Sullivan is based on the corrupt FBI agent John Connolly, while the character Frank Costello is based on Irish-American gangster Whitey Bulger.[3][4][5] The film stars Leonardo DiCaprio, Matt Damon, Jack Nicholson, and Mark Wahlberg, with Martin Sheen, Ray Winstone, Vera Farmiga, and Alec Baldwin in supporting roles.
+
+                The film takes place in Boston. Irish Mob boss Frank Costello (Nicholson) plants Colin Sullivan (Damon) as a mole within the Massachusetts State Police; simultaneously, the police assign undercover state trooper Billy Costigan (DiCaprio) to infiltrate Costello's crew. When both sides realize the situation, Sullivan and Costigan each attempt to discover the other's identity before they are found out.
+                
+                The Departed was a critical and commercial success, and won several accolades, including four Oscars at the 79th Academy Awards: for Best Picture, Best Director, Best Adapted Screenplay, and Best Film Editing. It became Scorsese's first and, to date, only win for Best Director;[6] Wahlberg was also nominated for Best Supporting Actor. The film also received six nominations at the 64th Golden Globe Awards, six nominations at the 60th British Academy Film Awards, and two nominations at the 13th Screen Actors Guild Awards. DiCaprio was nominated for Golden Globe Award for Best Actor – Motion Picture Drama (also nominated that year in the same category for Blood Diamond), BAFTA Award for Best Actor in a Leading Role and Screen Actors Guild Award for Outstanding Performance by a Male Actor in a Supporting Role for his performance.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- End_modal 3  -->
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+<!-- End_card3 -->
+
+        <hr>
+
+        <!-- Start_card4 -->
+
+
+        <div class="card-group">
+          <div class="card">
+            <img src="/html-and-css/bootstrap/Movie/img/HarryPotter.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Harry Potter</h5>
+              <p class="card-text">Ah, the first of the eight movies based on J.K. Rowling's popular book series! Harry Potter gets a letter (many letters actually) informing him that he is, in fact, a wizard, and is invited to attend the Hogwarts School for Witchcraft and Wizardry. There he discovers a magical world he never knew and, also, the darkness that ultimately waits for him.</p>
+            </div>
+
+
+ <!-- start_modal4 -->
+
+    <!-- Start_Button trigger modal4 -->
+    <div class="container my-2 bg-light">
+        <div class="col-md-12 text-center">
+<button type="button text-center" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+    Read More
+  </button>
+</div>
+</div>
+    <!-- End_Button trigger modal -->
+
+  <!-- Start_Modal4 -->
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel4">Harry Potter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <p>  Harry Potter is a film series based on the eponymous novels by J. K. Rowling. The series is distributed by Warner Bros. and consists of eight fantasy films, beginning with Harry Potter and the Philosopher's Stone (2001) and culminating with Harry Potter and the Deathly Hallows – Part 2 (2011).[2][3] A spin-off prequel series that will consist of five films started with Fantastic Beasts and Where to Find Them (2016), marking the beginning of the Wizarding World shared media franchise.[4]
+
+                The series was mainly produced by David Heyman, and stars Daniel Radcliffe, Rupert Grint, and Emma Watson as the three leading characters: Harry Potter, Ron Weasley, and Hermione Granger. Four directors worked on the series: Chris Columbus, Alfonso Cuarón, Mike Newell, and David Yates.[5] Michael Goldenberg wrote the screenplay for Harry Potter and the Order of the Phoenix (2007), while the remaining films' screenplays were written by Steve Kloves. Production took place over ten years, with the main story arc following Harry's quest to overcome his arch-enemy Lord Voldemort.[6]
+                
+                Harry Potter and the Deathly Hallows, the seventh and final novel in the series, was adapted into two feature-length parts.[7] Part 1 was released in November 2010, and Part 2 was released in July 2011.[8][9]
+                
+                Deathly Hallows – Part 1, Philosopher's Stone, and Deathly Hallows – Part 2 are among the 50 highest-grossing films of all time, and ranking them as the 48th-, 47th-, and 13th-highest-grossing films, with Philosopher's Stone and Deathly Hallows – Part 2 grossed over $1 billion. Without inflation adjustment, it is the third highest-grossing film series with $7.7 billion in worldwide receipts.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- End_modal4  -->
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+
+        <!-- End_card4 -->
+
+        <!-- Start_card5 -->
+
+
+          <div class="card">
+            <img src="/html-and-css/bootstrap/Movie/img/VforVendetta.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">V for Vendetta</h5>
+              <p class="card-text">In the year 2032, the U.K. is under the rule of the fascist and tyrannical Norsefire Party. Evey Hammond (Natalie Portman) finds a target on her back after she has an accidental run-in with a freedom fighter named "V." </p>
+            </div>
+                         <!-- start_modal5 -->
+
+    <!-- Start_Button trigger modal5 -->
+    <div class="container my-2 bg-light">
+        <div class="col-md-12 text-center">
+<button type="button text-center" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+    Read More
+  </button>
+</div>
+</div>
+    <!-- End_Button trigger modal5 -->
+
+  <!-- Start_Modal5 -->
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel5">V for Vendetta </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <p>  V for Vendetta is a 2005 dystopian political superhero action film directed by James McTeigue (in his feature directorial debut) from a screenplay by the Wachowskis.[a] It is based on the 1988 DC Comics limited series of the same name by Alan Moore and David Lloyd. The film is set in an alternative future where a fascist totalitarian regime has subjugated the United Kingdom. It centres on V (portrayed by Hugo Weaving), an anarchist and masked freedom fighter who attempts to ignite a revolution through elaborate terrorist acts, and Evey Hammond (portrayed by Natalie Portman) a young woman caught up in V's mission. Stephen Rea portrays a detective leading a desperate quest to stop V.
+
+                Produced by Silver Pictures, Virtual Studios and Anarchos Productions Inc., V for Vendetta was originally scheduled for release by Warner Bros. Pictures on 4 November 2005 (a day before the 400th Guy Fawkes Night), but was delayed; it instead opened in the United States on 17 March 2006 to mostly positive reviews from critics and was a box office success. However, Alan Moore, having been dissatisfied with the film adaptations of his other works, From Hell (2001) and The League of Extraordinary Gentlemen (2003), declined to watch the film and asked to not be credited or paid royalties.
+                
+                V for Vendetta has been seen by many political groups as an allegory of oppression by government; anarchists have used it to promote their beliefs. David Lloyd stated: "The Guy Fawkes mask has now become a common brand and a convenient placard to use in protest against tyranny—and I'm happy with people using it, it seems quite unique, an icon of popular culture being used this way."[7]</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- End_modal5 -->
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+
+            <!-- End_card5 -->
+
+            <!-- Start_card6 -->
+
+
+          <div class="card">
+            <img src="/html-and-css/bootstrap/Movie/img/DonnieDarko.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Donnie Darko</h5>
+              <p class="card-text"> A sleepy-eyed Jake Gyllenhaal plays Donnie Darko, a teen who narrowly escapes death when an engine falls off a plane and destroys his bedroom when he's not there. Soon, he finds himself committing crimes ordered by his imaginary friend Frank, a man in a large rabbit suit. This cult classic is definitely odd, but a must-see.</p>
+            </div>
+                         <!-- start_modal6 -->
+
+    <!-- Start_Button trigger modal6 -->
+    <div class="container my-2 bg-light">
+        <div class="col-md-12 text-center">
+<button type="button text-center" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+    Read More
+  </button>
+</div>
+</div>
+    <!-- End_Button trigger modal6 -->
+
+  <!-- Start_Modal6 -->
+  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel6">Donnie Darko  </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <p>  Donnie Darko is a 2001 American science fiction psychological thriller film written and directed by Richard Kelly and produced by Flower Films. It stars Jake Gyllenhaal, Jena Malone, Maggie Gyllenhaal, Drew Barrymore, Mary McDonnell, Katharine Ross, Patrick Swayze, Noah Wyle, Stu Stone, Daveigh Chase, and James Duval. Set in October 1988, the film follows Donnie Darko, a troubled teenager who narrowly escapes a bizarre accident and has visions of Frank, a mysterious figure in a rabbit costume who informs him that the world will end in just over 28 days. Frank begins to manipulate Donnie to commit several crimes.
+
+                Development began in late 1997 when Kelly had graduated from film school and started writing scripts. He took an early idea of a jet engine falling onto a house with no one knowing its origin and built the story around it. Kelly insisted on directing the film in person and struggled to secure backing from producers until 2000, when Barrymore's Flower Films agreed to produce it on a $4.5 million budget. Filming took 28 days in the summer of 2000, mostly in California. The soundtrack features a cover of "Mad World" by Tears for Fears by American musicians Gary Jules and Michael Andrews, which went to No. 1 on the UK Singles Chart for three weeks.[4]
+                
+                The film premiered on January 19, 2001 at the Sundance Film Festival, followed by a limited theatrical release on October 26. Because the film's advertising featured a crashing plane and the September 11 attacks had occurred a month and a half before, it was scarcely advertised, which affected its box office performance; it grossed just $517,375 in its initial run.[3] Donnie Darko received positive reviews and was listed No. 2 in Empire's "50 Greatest Independent Films of All Time",[5] and No. 53 in Empire's "500 Greatest Movies of All Time".[6] After reissues, it went on to gross $7.5 million worldwide. In March 2002, the film was released on home video, earning $500,000 in sales and gained a cult following.[7] Kelly released Donnie Darko: The Director's Cut in 2004. The film was adapted into a stage production in 2007 and a sequel, S. Darko, followed in 2009 without Kelly's involvement. In 2021, he announced that work on a new sequel is in progress.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- End_modal6 -->
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- End_card6 -->
+
+
+        <!-- End_cards -->
+
+        <hr>
+
+        <!-- start_footer -->
+
+        
+    <footer class="mt-auto py-3 bg-dark text-light text-center">
+
+      <div class="container">
+          <p class="lead">Copyright</p>
+      </div>
+
+  </footer>
+
+          <!-- End_footer -->
+
+
+
+
+</body>
+</html>

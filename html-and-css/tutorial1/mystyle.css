@@ -1,0 +1,165 @@
+*{
+  background-image: url(/html-and-css/tutorial1/img/walpaper.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+
+
+
+/* Start_Main menu */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border: 1px solid white;
+  border-style: dashed ;
+}
+
+li {
+  float: left;
+  border: 1px solid white;
+  border-style: dashed ;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+/* End_Main menu */
+
+
+
+
+
+/* start_slideshow */
+
+
+.container{
+  width: 85vmin;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border: 10px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+}
+
+.wrapper{
+  width: 20%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+img{
+  width: 50%;
+  border-radius: 30px ;
+
+}
+
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+  55%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-200%);
+  }
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
+}
+
+
+/* end_slideshow */
+
+
+/* Start_table */
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  color: white;
+}
+
+
+th, td {
+  
+  text-align:center;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+
+
+/* End_table */
+
+/* start_form */
+
+form {
+  color: #ffffff;
+  text-align: center;
+  border: 5px solid white;
+  border-style: dotted;
+
+}
+
+input, textarea{
+
+  color: #ffffff;
+  text-align: center;
+  border: 5px solid white;
+  border-style: dotted;
+
+}
+
+
+label {
+  font-family: 'Akaya Kanadaka';font-size: 16px;
+  text-shadow: 2px 2px black;
+
+}
+
+
+
+
+

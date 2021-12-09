@@ -1,0 +1,22 @@
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+}
+
+/* Start_LOGIN */
+
+
+.input-group>.input-group-prepend {
+flex: 0 0 15%;
+}
+.input-group .input-group-text {
+width: 0 0 90%;
+}
+
+.input-group{
+flex-wrap: nowrap;
+}
+
+/* End_LOGIN */
