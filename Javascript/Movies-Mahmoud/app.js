@@ -7,7 +7,7 @@ let films = []
 const tableBody = document.querySelector('tbody')
 
 function TestRemove(getEl){
-  //  e.preventDefault();
+//    e.preventDefault();
     console.log(getEl.parentElement.parentElement.parentElement)
     getEl.parentElement.parentElement.parentElement.remove()
 }
