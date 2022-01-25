@@ -7,6 +7,7 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   background-color: hsl(235, 21%, 11%);
+  background-image: url(./assets/background.jpg);
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -49,10 +50,15 @@ body {
 
 .new-todo {
   background-color: hsl(235, 24%, 19%);
-  height: 70px;
-  margin: 50px;
+  height: 120px;
+  margin: 30px;
   border-radius: 6px;
   display: flex;
+}
+
+.list {
+  background-color: hsl(235, 24%, 19%);
+  color: aliceblue;
 }
 
 .check {
