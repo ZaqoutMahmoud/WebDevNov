@@ -1,0 +1,14 @@
+/*  style overall buttons */
+.swal-button{
+  border: 1px dashed #333;
+}
+/*  style cancel buttons */
+.swal-button--cancel{
+  color: #333;  
+}
+.swal-button--confirm{
+  color: green 
+}
+.swal-button--danger{
+  color: red;
+}

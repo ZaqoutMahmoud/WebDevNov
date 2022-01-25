@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+
+</head>
+<!-- tried to customise sweetalert, no success -->
+<style>
+  .swal-box {
+
+    background: rgba(63, 255, 106, 0.69);
+
+  }
+
+  .swal-title {
+    margin: 0px;
+    font-size: 25px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+    margin-bottom: 28px;
+  }
+</style>
+
+<body>
+  <button id="normalalert" onclick="norm()">Normal Alert</button>
+  <button onclick="fireSweetAlert()">Show sweet alert example</button>
+  <button onclick="fireSweetAlertMore()">Show more sweet alert examples</button>
+  <script>
+    function norm() {
+      alert("norm");
+    }
+  </script>
+  <script>
+    function fireSweetAlert() {
+      Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success', {
+
+          className: "swal-title"
+
+        },
+      )
+    }
+  </script>
+  <script>
+    function fireSweetAlertMore() {
+      Swal.fire({
+        title: 'Do you want to save the changes?',
+        fontSize: "300px",
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Save',
+        denyButtonText: `
+        Don 't save`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          Swal.fire('Saved!', '', 'success')
+        } else if (result.isDenied) {
+          Swal.fire('Changes are not saved', '', 'info')
+        }
+      })
+
+    }
+  </script>
+</body>
+
+</html>
