@@ -136,10 +136,11 @@ body {
 }
 
 .todo-item {
+  text-align: center;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 50px;
   background-color: hsl(235, 24%, 19%);
   border-bottom: 1px solid hsl(237, 14%, 26%);
   color: hsl(234, 39%, 85%);
