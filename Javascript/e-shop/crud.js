@@ -1,6 +1,5 @@
 let title = document.getElementById("title");
 let img = document.getElementById("img");
-
 let price = document.getElementById("price");
 let taxes = document.getElementById("taxes");
 let ads = document.getElementById("ads");
@@ -71,7 +70,6 @@ submit.onclick = function () {
 function clearData() {
   title.value = "";
   img.value = "";
-
   price.value = "";
   taxes.value = "";
   ads.value = "";
@@ -155,7 +153,6 @@ function editData(i) {
 //search
 
 let searchMood = "title";
-
 function getSearchMood(id) {
   let search = document.getElementById("search");
   if (id == "searchTitle") {
@@ -166,7 +163,7 @@ function getSearchMood(id) {
   search.placeholder = "Search By: " + searchMood;
   search.focus();
   search.value = "";
-  showData;
+  showData();
 }
 
 function searchData(value) {
@@ -179,8 +176,7 @@ function searchData(value) {
         <td>${i}</td>
         <td>${dataPro[i].title}</td>
         <td>${dataPro[i].img}</td>
-
-
+    
         <td>${dataPro[i].price}</td>
         <td>${dataPro[i].taxes}</td>
         <td>${dataPro[i].ads}</td>
@@ -190,7 +186,7 @@ function searchData(value) {
     
         <td><button onclick="editData( ${i})" id="edit">Edit</button></td>
         <td><button onclick= 'deleteData( ${i})' id="delete">Delete</button></td>
-        </tr>
+      </tr>
         
         `;
       }
@@ -203,8 +199,7 @@ function searchData(value) {
         <td>${i}</td>
         <td>${dataPro[i].title}</td>
         <td>${dataPro[i].img}</td>
-
-
+    
         <td>${dataPro[i].price}</td>
         <td>${dataPro[i].taxes}</td>
         <td>${dataPro[i].ads}</td>
@@ -214,27 +209,12 @@ function searchData(value) {
     
         <td><button onclick="editData( ${i})" id="edit">Edit</button></td>
         <td><button onclick= 'deleteData( ${i})' id="delete">Delete</button></td>
-        </tr>
+      </tr>
         
         `;
       }
     }
   }
-
   document.getElementById("tbody").innerHTML = table;
 }
-
 // clean data
-
-// start_image
-
-function showPreview(event) {
-  if (event.target.files.length > 0) {
-    var src = URL.createObjectURL(event.target.files[0]);
-    var preview = document.getElementById("file-ip-1-preview");
-    preview.src = src;
-    preview.style.display = "block";
-  }
-}
-
-// end_image
