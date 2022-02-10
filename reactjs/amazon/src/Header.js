@@ -14,6 +14,7 @@ function Header() {
         <img
           className="header__logo"
           src="https://pngpress.com/wp-content/uploads/2020/07/uploads_amazon_amazon_PNG11.png"
+          alt="logo"
         />
       </Link>
       {/* End_Logo */}
@@ -29,7 +30,7 @@ function Header() {
       {/* Start_1st_Link */}
       <Link to="/Login" className="header__link">
         <div className="header_option">
-          <span className="header__optionLineOne">Hello Qazi </span>
+          <span className="header__optionLineOne">Hello Mahmoud </span>
           <span className="header__optionLineTwo">Sign In </span>
         </div>
       </Link>
