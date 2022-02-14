@@ -5,8 +5,11 @@ import { Link } from "react-router-dom";
 
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ basket }] = useStateValue();
+
   return (
     <nav className="header">
       {/* Start_Logo */}
