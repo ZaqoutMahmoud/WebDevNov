@@ -17,8 +17,8 @@
 
 .product__rating {
   display: flex;
-  float: center;
-  padding: 20px;
+  float: left;
+  padding: 5px;
   font-size: 15px;
   text-align: center;
 }
