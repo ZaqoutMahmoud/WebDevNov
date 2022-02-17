@@ -11,6 +11,7 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 
 import Home from "./Home";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Checkout" element={<Checkout />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/contact" element={<contact />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
     </Router>
   );

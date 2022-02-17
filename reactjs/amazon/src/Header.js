@@ -67,7 +67,7 @@ function Header() {
         </div>
       </Link>
       {/* Start_5th_Link */}
-      <Link to="/contact" className="header__link">
+      <Link to="/Contact" className="header__link">
         <div className="header_option">
           <ContactPhoneIcon />
         </div>
