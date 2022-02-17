@@ -10,8 +10,7 @@
   min-width: 100px;
   background-color: white;
   z-index: 1;
-  border-color: blue;
-  border-style: dashed;
+  border: solid 1px gray;
   text-align: center;
 }
 
@@ -19,11 +18,12 @@
   display: flex;
   float: left;
   padding: 5px;
-  font-size: 15px;
+  font-size: 11px;
   text-align: center;
 }
 
 .product > img {
+  padding: 50 px;
   max-height: 200px;
   width: 100%;
   object-fit: contain;
