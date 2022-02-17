@@ -5,11 +5,19 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import { useStateValue } from "./StateProvider";
+import { auth } from "./firebase";
 
 function Header() {
-  const [{ basket }] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
   console.log(basket);
 
+  const login = () => {
+    if (user) {
+      auth.signOut();
+      localStorage.clear();
+      basket.splice(0);
+    }
+  };
   return (
     <nav className="header">
       {/* Start_Logo */}
@@ -31,10 +39,12 @@ function Header() {
       <div className="headerNav"></div>
 
       {/* Start_1st_Link */}
-      <Link to="/Login" className="header__link">
-        <div className="header_option">
-          <span className="header__optionLineOne">Hello Mahmoud </span>
-          <span className="header__optionLineTwo">Sign In </span>
+      <Link to={"/Login"} className="header__link">
+        <div onClick={login} className="header_option">
+          <span className="header__optionLineOne">Hello, {user?.email}</span>
+          <span className="header__optionLineTwo">
+            {user ? "Sign Out" : "Sign In"}
+          </span>
         </div>
       </Link>
       {/* Start_2nd_Link */}
