@@ -1,6 +1,11 @@
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Swal from "sweetalert2";
+
+AOS.init();
 
 function Product({ id, title, image, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
@@ -17,10 +22,31 @@ function Product({ id, title, image, price, rating }) {
         rating: rating,
       },
     });
+    Swal.fire({
+      title: "Your item has been added to the cart! 👋",
+      position: "top",
+      showClass: {
+        popup: `
+          animate__animated
+          animate__fadeInDown
+          animate__faster
+        `,
+      },
+      hideClass: {
+        popup: `
+          animate__animated
+          animate__fadeOutUp
+          animate__faster
+        `,
+      },
+      grow: "row",
+      showConfirmButton: false,
+      showCloseButton: true,
+    });
   };
 
   return (
-    <div className="product">
+    <div data-aos="zoom-in-up" data-aos-duration="1200" className="product">
       <div className="product__info">
         <p>{title}</p>
         <p className="product__price">
