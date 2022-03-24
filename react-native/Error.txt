@@ -1,0 +1,13 @@
+npm cache clear --force
+
+npm install
+
+
+npm audit fix --force
+
+
+npm install -g expo-cli
+
+ npm audit fix --force in node_modules directory
+
+npm i -g expo-cli

@@ -1,0 +1,22 @@
+{
+  "db": [],
+  "blogs": [],
+  "contact": [],
+  "members": [
+    {
+      "email": "atilla@atilla.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "email": "jack@jack.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "michael@yahoo.com",
+      "password": "123456",
+      "id": 3
+    }
+  ]
+}
