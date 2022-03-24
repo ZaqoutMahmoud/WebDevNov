@@ -12,13 +12,6 @@ export default function App() {
   const [singlePost, setSinglePost] = useState("");
 
   useEffect(() => {
-    // fetch("https://jsonplaceholder.typicode.com/posts/")
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     // console.log(data);
-    //     setPosts(data);
-    //   })
-    //   .catch((err) => console.log(err));
     fetch(`https://jsonplaceholder.typicode.com/posts/${IndexNumber}`)
       .then((res) => res.json())
       .then((data) => {
