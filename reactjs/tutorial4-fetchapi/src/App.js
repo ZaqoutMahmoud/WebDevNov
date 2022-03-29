@@ -1,10 +1,11 @@
 import { Container } from "react-bootstrap";
-export default function App() {
+import ChildComponent from "./components/ChildComponent";
+export default function App({ helloMessage }) {
   return (
     <Container>
-      <div className="col-8 pt-3 mx-auto text-center">
-        <h1>Welcome to Home-Page</h1>
-      </div>
+      <h1>hello</h1>
+
+      <ChildComponent helloMessage={helloMessage} />
     </Container>
   );
 }
