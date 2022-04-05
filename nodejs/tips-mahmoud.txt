@@ -13,7 +13,9 @@ const {} = require("./")
 ------------
 
 if (nodemon) isn't installed
- you should download from (npm i nodemon)
+ you should download from:
+  (npm i nodemon)
+  (npm i node-fetch@2)
 
 -----
 
@@ -24,6 +26,7 @@ node main.js -> npm start
 ---------
 Fetching data from url in nodejs 
 
+npm i node-fetch
 
 
 
