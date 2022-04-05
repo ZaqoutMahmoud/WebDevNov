@@ -1,0 +1,16 @@
+{
+  "name": "hellozaqout",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "server.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "Hello",
+    "start": "node server.js"
+  },
+  "author": "Mahmoud",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^6.1.1"
+  }
+}

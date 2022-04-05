@@ -1,0 +1,30 @@
+npm init -y
+
+
+
+module.exports  - > to export function
+
+
+node index.js  - > to run server  = look at tut 2
+
+
+const {} = require("./")
+
+------------
+
+if (nodemon) isn't installed
+ you should download from (npm i nodemon)
+
+-----
+
+to run
+
+node main.js -> npm start
+
+---------
+Fetching data from url in nodejs 
+
+
+
+
+
